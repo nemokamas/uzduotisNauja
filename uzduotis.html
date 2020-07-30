@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Bandymas</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<!-- paieska -->
+
+  <input type="text" id="paieska" onkeyup="myFunction()" placeholder="Ieškoti" title="Paieška">
+  
+ <!-- lentele -->
+ <div class="ikelimas">
+  Vardas: <input type="text" name="name" id="name" /><br/><br/>
+  Gimimo metai: <input type="text" name="birth_year" id="birth_year" /><br/><br/>
+  Lytis: <input type="text" name="gender" id="gender" /><br/><br/>
+ <button class="mygtukas" onclick="addRow();">Pridėti naują įrašą</button><br/><br/></div>
+<table>
+  
+  <thead>
+<th class="th-vardas">Vardas</th>
+<th class="th-gimimas">Gimimo metai</th>
+<th class="th-lytis">Lytis</th>
+</thead>
+<table id='lentele'>
+  <tbody>
+  </tbody>
+  
+</table>
+<button class="trinti" onclick="istrinti()">Ištrinti</button>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="jsFAILAS.js"> </script>
+  </body>
+  </html>

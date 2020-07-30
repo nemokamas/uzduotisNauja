@@ -1,0 +1,95 @@
+#paieska {
+    background-image: url('search.png');
+    background-position: 13px 13px;
+    background-repeat: no-repeat;
+    width: 46%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+#paieska:hover {
+    background-color: thistle;
+}
+.ikelimas {
+    background-color: teal;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 20%;
+    border: 2px solid black;
+    padding: 10px 10px 10px 10px;
+    margin-left: 15%;
+    margin-bottom: 1%;
+}
+.mygtukas {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 15%;
+    font-size: 20px;
+    background-color: yellow;
+    height: 50px;
+}
+.mygtukas:hover {
+    background-color: thistle;
+    transform: scale(1.30);
+}
+table {
+    border-collapse: collapse ;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+td, th {
+    border: 2px solid black;
+    padding: 5px;
+}
+td:nth-child(odd) {
+    background: rgb(205, 169, 50);
+}
+td:nth-child(even) {
+    background: blueviolet;
+    color:white;
+}
+.th-vardas {
+    width: 49.8%;
+}
+.th-gimimas{
+    width: 27.6%;
+}
+  #lentele {
+    border-collapse: collapse;
+    width: 50%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+  }
+  #lentele th, #lentele td {
+    text-align: left;
+    padding: 12px;
+  }
+  #lentele tr {
+    border-bottom: 1px solid #ddd;
+  }
+  #lentele td:hover {
+      background-color: red;
+      transform: scale(1.08);
+  } 
+  .th-vardas:hover, .th-gimimas:hover, .th-lytis:hover {
+    background-color: coral;
+  }
+  .trinti {
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 1%;
+    height: 40px;
+  }
+  .trinti:hover {
+    transform: scale(1.2);
+  }
