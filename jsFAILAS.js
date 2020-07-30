@@ -54,6 +54,11 @@ function constructTableRow(data) {
     row.appendChild(constructElement('td', name))
     row.appendChild(constructElement('td', birth_year))
     row.appendChild(constructElement('td', gender))
+    var btn=document.createElement("button");     
+      btn.className = "deletebtn"; 
+      btn.title = "Remove row"; 
+      btn.innerHTML = "X";
+    row.appendChild(btn)
     return row;
 }
 
@@ -86,12 +91,20 @@ function addRow()
       var cel1 = newRow.insertCell(0);
       var cel2 = newRow.insertCell(1);
       var cel3 = newRow.insertCell(2);
+      var cel4 = newRow.insertCell(3);
+      var btn=document.createElement("button");     
+      btn.className = "deletebtn"; 
+      btn.title = "Remove row"; 
+      btn.innerHTML = "X";
       cel1.innerHTML = name;
       cel2.innerHTML = birth_year;
       cel3.innerHTML = gender;
+      cel4.appendChild(btn);
+            
+
 }
-// istrinti RANDOM irasa (kitaip nesugalvoju)
-function istrinti() {
-    document.getElementById("lentele").deleteRow(0);
-  }
+// // istrinti RANDOM irasa (kitaip nesugalvoju)
+// function istrinti() {
+//     document.getElementById("lentele").deleteRow(0);
+//   }
 

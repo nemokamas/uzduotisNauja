@@ -9,6 +9,7 @@
     padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
     margin-bottom: 12px;
+    border: 2px solid black;
   }
 #paieska:hover {
     background-color: thistle;
@@ -57,10 +58,13 @@ td:nth-child(even) {
     color:white;
 }
 .th-vardas {
-    width: 49.8%;
+    width: 46.5%;
 }
 .th-gimimas{
-    width: 27.6%;
+    width: 25.8%;
+}
+.th-trinti {
+    width: 5%;
 }
   #lentele {
     border-collapse: collapse;
@@ -81,6 +85,9 @@ td:nth-child(even) {
   } 
   .th-vardas:hover, .th-gimimas:hover, .th-lytis:hover {
     background-color: coral;
+  }
+  .th-trinti:hover {
+      background-color: red;
   }
   .trinti {
     background-color: red;

@@ -7,6 +7,12 @@
   <meta name="author" content="">
   <title>Bandymas</title>
   <link href="style.css" rel="stylesheet">
+  <script>
+ $(document).on('click', 'button.deletebtn', function () {
+     $(this).closest('tr').remove();
+     return false;
+ });
+</script>
 </head>
 <body>
 <!-- paieska -->
@@ -25,16 +31,16 @@
 <th class="th-vardas">Vardas</th>
 <th class="th-gimimas">Gimimo metai</th>
 <th class="th-lytis">Lytis</th>
+<th class="th-trinti">Trinti</th>
 </thead>
 <table id='lentele'>
   <tbody>
   </tbody>
   
 </table>
-<button class="trinti" onclick="istrinti()">Ištrinti</button>
-
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="jsFAILAS.js"> </script>
+
   </body>
   </html>
