@@ -29,7 +29,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-left: 15%;
-    font-size: 20px;
+    font-size: 18px;
     background-color: yellow;
     height: 50px;
 }
@@ -39,7 +39,7 @@
 }
 table {
     border-collapse: collapse ;
-    width: 50%;
+    width: 50.3%;
     font-family: Arial, Helvetica, sans-serif;
 }
 th {
@@ -48,7 +48,7 @@ th {
 }
 td, th {
     border: 2px solid black;
-    padding: 5px;
+    padding: 3px;
 }
 td:nth-child(odd) {
     background: rgb(205, 169, 50);
@@ -58,17 +58,21 @@ td:nth-child(even) {
     color:white;
 }
 .th-vardas {
-    width: 46.5%;
+    width: 49.1%;
 }
 .th-gimimas{
-    width: 25.8%;
+    width: 27.3%;
 }
-.th-trinti {
-    width: 5%;
+.th-lytis{
+  width: 21.8%;
 }
+.th-trinti{
+  width: 15%;
+}
+
   #lentele {
     border-collapse: collapse;
-    width: 50%;
+    width: 50.7%;
     border: 1px solid #ddd;
     font-size: 18px;
   }
@@ -99,4 +103,16 @@ td:nth-child(even) {
   }
   .trinti:hover {
     transform: scale(1.2);
+  }
+  .deletebtn {
+    background-color: #f44336;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 
+    0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 2px solid black;
+    margin-left: 30%;
+    margin-top: 15%;
+  }
+  .deletebtn:hover{
+    transform: scale(1.4);
+    background-color: gray;
   }

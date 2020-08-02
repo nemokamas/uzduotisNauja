@@ -18,6 +18,7 @@ function getDetail(apiURL) {
   }
   var rezultatas = "";
   getDetail("https://swapi.dev/api/people");
+  
 
 // paieska virs lenteles
 $(document).ready(function(){
