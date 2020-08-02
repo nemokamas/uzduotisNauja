@@ -1,0 +1,27 @@
+.container {
+    
+}
+.title{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align:center;
+    width: 210px;
+    color: black;
+    border: solid black 1px;
+    }
+    input[type="button"]
+    {
+    border-radius: 10px;
+    background-color:rgb(149, 68, 255);
+    color: black;
+    border-color:#ff4456;
+    width:100%;
+    }
+    input[type="text"]
+    {
+    border-radius: 10px;
+    text-align: right;
+    background-color:white;
+    border-color: black ;
+    width:100%;
+    }

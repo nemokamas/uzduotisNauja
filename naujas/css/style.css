@@ -1,0 +1,291 @@
+
+body {
+  padding-top: 56px;
+}
+/* headerio video */
+header {
+  position: relative;
+  background-color: black;
+  height: 65vh;
+  min-height: 45rem;
+  width: 100%;
+  border: 1px solid;
+  overflow: hidden;
+}
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+header .container {
+  position: relative;
+  z-index: 2;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+/* nuorodos PC VERSION, APPLE IR GOOGLE */
+
+.atsisiusti {
+  margin-bottom: -40px;
+  margin-top: 5%;
+}
+.textEfektas {
+  background-color: #c49250;;
+  border: 5px outset #A48033;
+  border-radius: 40px;
+  font-size: 36px;
+  color: white;
+  text-shadow:  2px 4px 0px black;
+  text-align: center;
+position: relative;
+font-weight: 900;
+}
+.textEfektas .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.textEfektas .raides  {
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+.video-linkai {
+  background-color: #FFE4C4;
+}
+.siuntimasis{
+  background-color: #FFE4C4;
+  margin-left: 40%;
+  display: inline-block;
+}
+.nuorodos {
+  -webkit-animation: fadein 3s; 
+  -moz-animation: fadein 3s; 
+   -ms-animation: fadein 3s; 
+    -o-animation: fadein 3s; 
+    animation: fadein 3s;
+    align-items: center;
+  justify-content: center;
+  padding: 1% 1% 1% 3%;
+}
+.nuorodos:hover {
+  transform: scale(1.28);
+}
+/* paveiksliukas su fade in tekstu */
+.fade-in {
+  opacity: 0;
+  transition: opacity 100ms ease-in;
+}
+.fade-in.appear {
+  opacity: 1;
+}
+.img-fluid {
+  border: 5px outset #A48033;
+  border-radius: 40px;
+}
+.img-fluid:hover{
+  transform: scale(1.06);
+}
+.btn-zaisti{
+  background-color: #FF851B;
+  height: 50px;
+  border: 3px solid;
+  border-color: black;
+  color: white;
+  font-family: Impact, Charcoal, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  margin-top: 10px;
+  left: 16%;
+  bottom: 130px;
+}
+.btn-zaisti:hover {
+  transform: scale(1.3);
+}
+
+#aprasymas {
+  font-family: Oswald,Arial,Georgia,sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding-top: 50px;
+  font-size: 26px;
+  color: #c49250;
+  text-shadow: black 5px 0 2px;
+}
+.bruksnys {
+  position: relative;
+    display: block;
+    overflow: hidden;
+    border-top: 4px solid #99664d;
+    padding-top: .6em;
+    max-width: 13.5rem;
+    margin: 0 auto 2rem;
+    width: 100%;
+}
+.aprasymas2 {
+  font-size: 19px;
+  color: #d5d2c9;
+  text-shadow: white 0.5px 0 0px;
+}
+.main-as {
+  padding-top: 5%;
+  padding-bottom: 4%;
+  background-image: url('https://vignette.wikia.nocookie.net/leagueoflegends/images/8/8b/Piltover_Zaun_LoR_Background.jpg/revision/latest?cb=20191022172320');
+  background-repeat: no-repeat;
+}
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('img/Legends of Runeterra Launch Announcement  Trailer.mp4"') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 2; }
+}
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 2; }
+}
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 2; }
+}
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 2; }
+}
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 2; }
+}
+/* Splash (intro svetaine, pries ieinant i pati main page/index */
+.splash {
+  top: 0;
+  width: 100%;
+  height: 200vh;
+  left: 0;
+  position: fixed;
+  background-image: url('https://images3.alphacoders.com/107/thumb-1920-1074608.jpg');
+  background-repeat: no-repeat;
+  z-index: 100;
+  line-height: 40vh;
+}
+.splash.neberodyti {
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 200vh;
+  left: 0;
+  position: fixed;
+  background-image: url('https://images3.alphacoders.com/107/thumb-1920-1074608.jpg');
+  background-repeat: no-repeat;
+  z-index: -10;
+  line-height: 40vh;
+}
+
+@keyframes fadeYn {
+  to   { opacity: 1; }
+}
+.fadeYn {
+  opacity: 0;
+  animation: fadein 1s ease-in forwards;
+}
+.izanga {
+  position: relative;
+  font-weight: 900;
+  font-size: 4.5em;
+}
+.izanga .skaiciai {
+  position: absolute;
+  margin: 15% 15% 15% 15%;
+  left: 0;
+  top: 0.3em;
+  right: 0;
+  opacity: 0; 
+}
+.skaiciai-1 {
+  padding-bottom: 40%;
+  text-align: center;
+  color: #FF6F61;
+   text-shadow: black 5px 0 2px; 
+   font-size: 90px;
+   font-weight: bold;
+}
+.skaiciai-2 {
+  text-align: center;
+  text-shadow: black 5px 0 2px;
+  color: #c49250;
+  font-size: 90px;
+  font-weight: bold;
+}
+.skaiciai-3 {
+  text-align: center;
+  color: #88B04B; 
+  text-shadow: black 5px 0 2px;
+  font-size: 90px;
+  font-weight: bold;
+}
+.centriukas {
+  justify-content: center;
+  
+}
+.img-virsus {
+  margin-top: 25%;
+  display: inline-block;
+}
+.img-virsus:after {
+  content: "";
+  position: absolute;
+    top: 0%;
+  left: -30%;
+  width: 20%;
+  height: 100%;
+  opacity: 0;
+  transform: rotate(30deg);
+
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+.img-virsus:hover:after {
+  opacity: 1;
+  left: 130%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+.img-virsus:active:after {
+  opacity: 0;
+}
