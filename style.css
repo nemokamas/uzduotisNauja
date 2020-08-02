@@ -113,6 +113,6 @@ td:nth-child(even) {
     margin-top: 15%;
   }
   .deletebtn:hover{
-    transform: scale(1.4);
+    transform: scale(1.6);
     background-color: gray;
   }
