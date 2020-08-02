@@ -8,7 +8,7 @@ function getDetail(apiURL) {
   
   function showDetail(data) {
     for (i = 0; i < data.results.length; i++) {
-      rezultatas = rezultatas + data.results[i].name + " " + data.results[i].birth_year + " " + data.results[i].gender + "\n"; // sudedu varda + gimimo diena ir lyti
+      rezultatas = rezultatas + data.results[i].name + " " + data.results[i].birth_year +  " " + data.results[i].gender + "\n"; // sudedu varda + gimimo diena ir lyti
     }
     if (data.next) {
       getDetail(data.next);
@@ -20,26 +20,15 @@ function getDetail(apiURL) {
   getDetail("https://swapi.dev/api/people");
 
 // paieska virs lenteles
-function myFunction() {
-    var input, filter, table, tr, th, td, i, txtValue;
-    input = document.getElementById("paieska");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("lentele");
-    tr = table.getElementsByTagName("tr");
-    th = table.getElementsByTagName("th");
-    td = table.getElementsByTagName("td");
-    for (i = 0; i < tr.length; i++) {
-      td = tr[i].getElementsByTagName("td")[0];
-      if (td) {
-        txtValue = td.textContent || td.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          tr[i].style.display = "";
-        } else {
-          tr[i].style.display = "none";
-        }
-      }       
-    }
-  }
+$(document).ready(function(){
+  $("#paieska").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#lentele tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+
     
 // pati lentele ( tik nerandu kodel meta tik 10 eiluciu)
   var url = 'https://swapi.dev/api/people';
@@ -56,7 +45,7 @@ function constructTableRow(data) {
     row.appendChild(constructElement('td', gender))
     var btn=document.createElement("button");     
       btn.className = "deletebtn"; 
-      btn.title = "Remove row"; 
+      btn.title = "Istrinti"; 
       btn.innerHTML = "X";
     row.appendChild(btn)
     return row;
@@ -94,15 +83,18 @@ function addRow()
       var cel4 = newRow.insertCell(3);
       var btn=document.createElement("button");     
       btn.className = "deletebtn"; 
-      btn.title = "Remove row"; 
+      btn.title = "Istrinti"; 
       btn.innerHTML = "X";
       cel1.innerHTML = name;
       cel2.innerHTML = birth_year;
       cel3.innerHTML = gender;
-      cel4.appendChild(btn);
-            
-
+      cel4.appendChild(btn);          
 }
+// Istrinimo mygtukas
+$(document).on('click', 'button.deletebtn', function () {
+  $(this).closest('tr').remove();
+  return false;
+});
 // // istrinti RANDOM irasa (kitaip nesugalvoju)
 // function istrinti() {
 //     document.getElementById("lentele").deleteRow(0);
